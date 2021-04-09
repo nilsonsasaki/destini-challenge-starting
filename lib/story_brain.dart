@@ -1,7 +1,7 @@
 import 'story.dart';
 
 class StoryBrain {
-  int storyNumber = 0;
+  int _storyNumber = 0;
   List<Story> _storyData = [
     Story(
         storyTitle:
@@ -35,7 +35,7 @@ class StoryBrain {
   ];
 
   String getStory() {
-    return (_storyData[storyNumber].storyTitle);
+    return (_storyData[_storyNumber].storyTitle);
   }
 }
 
